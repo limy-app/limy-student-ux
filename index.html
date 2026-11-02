@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limy Student UX Sunumu</title>
+<meta name="description" content="Limy Student öğrenci uygulamasının yeniden tasarımı: mevcut sistem üzerinden yapılan UX çalışmasının önce / sonra özeti ve yeni ekran haritası.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="brand-mark">L</span>Limy Student <small>· UX sunumu</small></a>
+    <nav class="nav-links">
+      <a href="#neden">Neden</a>
+      <a href="#once-sonra">Önce / Sonra</a>
+      <a href="#adimlar">Daha az adım</a>
+      <a href="#harita">Ekran haritası</a>
+      <a href="#yol">Yol haritası</a>
+    </nav>
+    <span class="pill"><span class="dot"></span>UX çalışması</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="pill"><span class="dot"></span>Yeni dönemde yayında · Şu an UX aşamasında</span>
+        <h1>Aynı Limy.<br><em>Daha sade</em> bir gün.</h1>
+        <p class="lead">Limy Student'ı bugünkü uygulamanın her ekranını tek tek inceleyerek ve müşterilerimizden gelen geri bildirimleri dikkate alarak yeniden kurguladık. Öğrenci ödevine, koçuna ve çalışmasına artık daha az adımla, daha net ekranlarla ulaşacak.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#once-sonra">Önce / sonra'yı gör
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+          <a class="btn btn-ghost" href="#harita">Yeni ekran haritası</a>
+        </div>
+        <div class="hero-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4b44e0" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+          <span>Bu sayfa bir <b>UX (kullanıcı deneyimi) çalışmasıdır</b>. "Sonra" görselleri akışı ve yerleşimi gösteren wireframe'lerdir; Limy'nin renkleri, karakterleri ve son görünümü bir sonraki aşamada (UI) eklenecek.</span>
+        </div>
+        <div class="scroll-hint"><span></span>Kaydırdıkça değişimi göreceksiniz</div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <span class="tag tag-old">Bugün</span>
+        <div class="phone ph-old"><div class="screen"><img src="assets/once/13.14.20.jpg" alt=""></div></div>
+        <div class="hero-arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="phone ph-new"><div class="screen"><img src="assets/sonra/home.png" alt=""></div></div>
+        <span class="tag tag-new">Yeni dönem</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BU SAYFA NEDİR -->
+  <section class="about">
+    <div class="wrap about-grid">
+      <div class="about-card reveal">
+        <div class="ic" style="background:#fde9ea"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e5484d" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+        <h3>Mevcut sistem üzerinden</h3>
+        <p>Çalışma, yayındaki uygulamanın gerçek ekran görüntüleriyle yapıldı. Her ekranda öğrenciyi yavaşlatan noktalar tek tek işaretlendi.</p>
+      </div>
+      <div class="about-card hl reveal d1">
+        <div class="ic" style="background:rgba(255,255,255,.14)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d6f53a" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg></div>
+        <h3>UX: akış ve yapı</h3>
+        <p>Bu aşamada hangi bilginin nerede duracağını ve öğrencinin hangi adımlarla ilerleyeceğini tasarladık. Görseller bilinçli olarak sade (wireframe).</p>
+      </div>
+      <div class="about-card reveal d2">
+        <div class="ic" style="background:#f3fbd2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5a6b00" stroke-width="2.2" stroke-linecap="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.1 1.2 6L12 16.4 6.6 19.4l1.2-6L3.3 9.3l6.1-.7z"/></svg></div>
+        <h3>Sırada: UI ve yayın</h3>
+        <p>Renkler, Limy karakterleri, ikonlar ve son görünüm UI aşamasında eklenecek. Yeni tasarım önümüzdeki dönemde tamamlanıp yayına alınacak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAKAMLAR -->
+  <section class="stats" id="neden">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:var(--lime)">Neden yeniden tasarım?</span>
+        <h2>Uygulama zengin; ama aradığını bulmak zor.</h2>
+        <p class="lead">Özellik eksik değil; sorun, özelliklere ulaşmanın karmaşık olması. Çalışmanın kapsamı:</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat reveal"><b data-count="13">13</b><span>bölümde uygulamanın tamamı incelendi</span></div>
+        <div class="stat reveal d1"><b data-count="90" data-suffix="+">90+</b><span>kullanım sorunu ekran ekran tespit edildi</span></div>
+        <div class="stat reveal d2"><b data-count="78">78</b><span>ekran ve durum yeniden kurgulandı</span></div>
+        <div class="stat reveal d3"><b data-count="5">5</b><span>ana sekmeyle her yere tek dokunuşla ulaşan yeni gezinme</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLKELER -->
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tasarım ilkeleri</span>
+        <h2>Beş basit kural, her ekranda.</h2>
+      </div>
+      <div class="principles">
+        <div class="principle reveal"><span class="n">01</span><h3>Her şey bir dokunuş uzakta</h3><p>Ödevler, Takvim ve Koçum alt menüde. Profil ve bildirimler her sayfanın üstünde.</p></div>
+        <div class="principle reveal d1"><span class="n">02</span><h3>Tek ad, tek dil</h3><p>Aynı şeyin dört farklı adı yok. "Study(Çalışma)" gibi karışık ifadeler yok.</p></div>
+        <div class="principle reveal d2"><span class="n">03</span><h3>Ekran içeriğe ait</h3><p>Kaydırınca üst alan tek satıra iner; ekranın ~%85'i içeriğe kalır.</p></div>
+        <div class="principle reveal d3"><span class="n">04</span><h3>Boşluk değil, yol</h3><p>"00:00:00" ya da iki satırlık boş metin yerine tek satır mesaj ve bir sonraki adım.</p></div>
+        <div class="principle reveal d4"><span class="n">05</span><h3>Her yaşa kendi ekranı</h3><p>İlkokul, ortaokul ve lise öğrencisi aynı uygulamada, yaşına uygun bir ana sayfa görür.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖNCE / SONRA GİRİŞ -->
+  <section class="chapters-intro" id="once-sonra">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">Önce / Sonra</span>
+        <h2>Kaydırın, ekran dönüşsün.</h2>
+        <p class="lead">Solda bugünkü sorunlar, sağda telefon. Aşağı indikçe bugünkü ekran yenisine dönüşüyor ve her sorunun yerini çözümü alıyor.</p>
+        <div class="legend">
+          <span><i style="background:var(--red)"></i>Bugünkü sorun</span>
+          <span><i style="background:var(--green)"></i>Yeni tasarımdaki çözüm</span>
+          <span><i style="background:var(--orange)"></i>Dönüşüm çizgisi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 ANA SAYFA -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>01</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Ana Sayfa</h2>
+        <p class="lead">Uygulama açılınca ilk görülen ekran. Bugün ekranın yarısını sabit kartlar kaplıyor; yenisinde öğrenci kendi günüyle başlıyor.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Öğrenci ve koç kartı yan yana; ikisi de dar ve sıkışık</span><span class="now">Kartlar sırayla kayar: önce öğrenci, sonra koçları</span></li>
+          <li><span class="mk">2</span><span class="was">Aşağı kayınca kartlar ve sayaç ekranın üst yarısında sabit kalıyor</span><span class="now">Üst alan tek satıra iner, ekranın ~%85'i içeriğe kalır</span></li>
+          <li><span class="mk">3</span><span class="was">Sınav tarihi yokken bile "00 · 00 · 00 · 00" görünüyor</span><span class="now">"YKS'ye kalan süre · 42 gün" ya da "Sınav tarihi henüz girilmedi"</span></li>
+          <li><span class="mk">4</span><span class="was">Sağ üstte yazısız ikonlar; 85 bildirim Profilim'in içinde saklı</span><span class="now">Üst bar: Profil · Mesaj · Bildirim (okunmamış sayısıyla)</span></li>
+          <li><span class="mk">5</span><span class="was">Hızlı Erişim'i öğrenci değiştirebiliyor; öğretmen "şuna bas" diyemiyor</span><span class="now">Herkes için aynı 4 kısayol; bölümler ayrı kartlarda</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/home.png" data-cap="Ana Sayfa · yeni akış (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.14.20.jpg" alt="Bugünkü Ana Sayfa">
+            <div class="after"><img src="assets/sonra/home.png" alt="Yeni Ana Sayfa wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> yayındaki uygulama · <b>Sonra:</b> yeni akış (wireframe)</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 2 GEZİNME -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>02</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Gezinme ve Uygulamalar</h2>
+        <p class="lead">Alt menü, öğrencinin en sık gittiği yerlere göre yeniden dizildi. 11 uygulama artık uzun bir kaydırma değil, tek bakışta bir ızgara.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Ödevler alt menüde yok; ödeve gitmek için Ana Sayfa'ya dönmek gerekiyor</span><span class="now">Alt menü: Ana Sayfa · Ödevler · Uygulamalar · Takvim · Koçum</span></li>
+          <li><span class="mk">2</span><span class="was">"Giriş" etiketi oturum açma gibi okunuyor</span><span class="now">Adı artık "Ana Sayfa"</span></li>
+          <li><span class="mk">3</span><span class="was">Ortadaki yuvarlak düğme yazısız; ne açtığı belli değil</span><span class="now">Düğmenin altında "Uygulamalar" yazıyor</span></li>
+          <li><span class="mk">4</span><span class="was">Büyük görsel kartlar: bir ekranda yalnız 3 uygulama</span><span class="now">2 sütunlu ızgara; 11 uygulamanın hepsi bir-iki ekranda</span></li>
+          <li><span class="mk">5</span><span class="was">Seyrek kullanılan Profilim alt menüde yer kaplıyor</span><span class="now">Profil, üst bardaki öğrenci karakterinden açılıyor</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/apps.png" data-cap="Uygulamalar · yeni akış (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.50.14.jpg" alt="Bugünkü Uygulamalar sayfası">
+            <div class="after"><img src="assets/sonra/apps.png" alt="Yeni Uygulamalar wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> yayındaki uygulama · <b>Sonra:</b> yeni akış (wireframe)</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 3 KOÇUM -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>03</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Koçum</h2>
+        <p class="lead">Koç, rehberlik ve danışman ekranları tek bir yerde, tek bir adla toplandı. Randevular ve mesajlar koçun hemen yanında.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Aynı kavrama dört ad: Koçum, Rehberlik, Danışman Detay, Rehberlik Servisi</span><span class="now">Tek ad: "Koçum". Rehberlik içeriği de burada</span></li>
+          <li><span class="mk">2</span><span class="was">İki koç yan yana sıkışıyor; "Temsilciyi Ara" ne yapıyor belli değil</span><span class="now">Kaydırılabilir koç kartları; telefon ikonlu "Ara"</span></li>
+          <li><span class="mk">3</span><span class="was">Bilgi yokken ekranın yarısı boş kalıyor</span><span class="now">Tek satır: "Koç henüz tanıtım yazısı eklemedi."</span></li>
+          <li><span class="mk">4</span><span class="was">"Görüşme Bekliyor" turuncu bir düğme gibi görünüyor</span><span class="now">Durum etiketi olarak gösteriliyor; basılacak düğmeyle karışmıyor</span></li>
+          <li><span class="mk">5</span><span class="was">Mesajlar önce ara bir "Sohbet" ekranı açıyor</span><span class="now">Mesajlar doğrudan sohbeti açıyor</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/coach.png" data-cap="Koçum · yeni akış (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.45.38.jpg" alt="Bugünkü Koçum sayfası">
+            <div class="after"><img src="assets/sonra/coach.png" alt="Yeni Koçum wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> yayındaki uygulama · <b>Sonra:</b> yeni akış (wireframe)</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 4 RANDEVU -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>04</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Randevu Al</h2>
+        <p class="lead">Bugün öğrenci geçmiş bir saati seçebiliyor ve hatayı ancak sonunda görüyor. Yenisinde hata yapma ihtimali baştan ortadan kalkıyor.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Geçmiş gün ve saatler seçilebiliyor; hata "Devam Et"ten sonra çıkıyor</span><span class="now">Geçmiş ve dolu saatler soluk, seçilemez; hata penceresine gerek yok</span></li>
+          <li><span class="mk">2</span><span class="was">Saat listesi takvimin altında sıkışık</span><span class="now">Saatler takvimin hemen altında; seçim düğmede yazar: "Devam Et · 9 Eki 14:50"</span></li>
+          <li><span class="mk">3</span><span class="was">Ters yazılmış sayılar: "0+Yıl Tecrübe", "56 + Görüşme"</span><span class="now">"7+ yıl tecrübe", "56 görüşme"</span></li>
+          <li><span class="mk">4</span><span class="was">Başarı mesajında tarih, saat ve koç tekrar edilmiyor</span><span class="now">Özet + "Randevularıma git" düğmesi</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/appointment.png" data-cap="Randevu Al · gün ve saat (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.23.44.jpg" alt="Bugünkü randevu hatası">
+            <div class="after"><img src="assets/sonra/appointment.png" alt="Yeni randevu wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> geçmiş saat hatası · <b>Sonra:</b> yeni gün / saat seçimi</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 5 TAKVİM -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>05</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Takvim → Günlük ajanda</h2>
+        <p class="lead">Altı sekmeye bölünmüş takvim, tek bir günlük listeye dönüşüyor: dersler, ödev teslimleri, randevular, çalışmalar ve notlar saat sırasıyla.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Ay takvimi ekranın üst yarısını kaplıyor; liste altta sıkışıyor</span><span class="now">Varsayılan 2 haftalık şerit; "Ay görünümü" istenince açılır</span></li>
+          <li><span class="mk">2</span><span class="was">6 sekme ekrandan taşıyor (Notlarım, Yemek Programı kesik)</span><span class="now">Sekmeler yerine tek liste ve filtre: Tümü · Programım · Ödev · Randevu · Not</span></li>
+          <li><span class="mk">3</span><span class="was">Hangi günde ders, ödev ya da not olduğu görünmüyor</span><span class="now">Dolu günlerin altında küçük nokta</span></li>
+          <li><span class="mk">4</span><span class="was">"Modları Göster" düğmesinin takvimle ilgisi belli değil</span><span class="now">Modlar Profil'e taşındı; takvim yalnız günü gösterir</span></li>
+          <li><span class="mk">5</span><span class="was">Boş sekmelerde üç ayrı uzun cümle</span><span class="now">Tek satır mesaj + "+ Not Ekle"</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/calendar.png" data-cap="Takvim · günlük ajanda (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.46.40.jpg" alt="Bugünkü Takvim">
+            <div class="after"><img src="assets/sonra/calendar.png" alt="Yeni Takvim wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> yayındaki uygulama · <b>Sonra:</b> yeni akış (wireframe)</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 6 ÖDEVLER -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>06</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Ödevlerim</h2>
+        <p class="lead">Ödevler alt menüye taşındı ve tek bir dil konuşuyor: her kartta türü, ölçüsü ve son günü aynı sırada.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">Kartta durum iki kez yazıyor: "Ödev Tamamlandı" ve "✓ Tamamlandı"</span><span class="now">Tek durum etiketi: "Tamamlandı" ya da "Bekliyor"</span></li>
+          <li><span class="mk">2</span><span class="was">Video ödevinde "%100", test ödevinde "4 Soru · 20 dk": kartlar farklı konuşuyor</span><span class="now">Aynı kalıp: "Test · 4 soru · 20 dk · 15 Eki"</span></li>
+          <li><span class="mk">3</span><span class="was">Yalnız ay ay listeleniyor; bugünün ödevleri ayrı görünmüyor</span><span class="now">Üstte takvim şeridi + "Bekleyen / Tamamlandı / Tümü" filtresi</span></li>
+          <li><span class="mk">4</span><span class="was">Başlık burada "Ödevler", Ana Sayfa'da "Ödevlerim"</span><span class="now">Her yerde "Ödevlerim"</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/assignments.png" data-cap="Ödevlerim · yeni akış (wireframe)">
+          <div class="screen">
+            <img src="assets/once/13.19.49.jpg" alt="Bugünkü Ödevler">
+            <div class="after"><img src="assets/sonra/assignments.png" alt="Yeni Ödevlerim wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> yayındaki uygulama · <b>Sonra:</b> yeni akış (wireframe)</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 7 ÇALIŞMA OTURUMU -->
+  <section class="chapter">
+    <div class="chapter-sticky"><div class="wrap">
+      <div class="ch-text">
+        <div class="ch-num"><b>07</b> / 07 <span class="ch-bar"><i></i></span></div>
+        <h2>Çalışma Oturumu</h2>
+        <p class="lead">Bugün öğrenci video izlemek için sayaçtan çıkmak zorunda. Yenisinde sayaç, video ve test tek bir oturumda birlikte çalışıyor.</p>
+        <ol class="changes">
+          <li><span class="mk">1</span><span class="was">▶'ya her basışta önce sayaç ayar ekranı açılıyor</span><span class="now">Sayaç son ayarlarla kendiliğinden başlar; ayarlar ⚙ içinde</span></li>
+          <li><span class="mk">2</span><span class="was">"Video İzle"ye basınca "Sayaçtan ayrılmak istediğinize emin misiniz?" uyarısı</span><span class="now">Video ve test sırasında sayaç üstte akmaya devam eder; uyarı yok</span></li>
+          <li><span class="mk">3</span><span class="was">Aynı anda iki ayrı süre: geri sayım ve "Geçen Süre"</span><span class="now">Tek büyük sayı: kalan süre</span></li>
+          <li><span class="mk">4</span><span class="was">Uygulama geneli "Dark Mode" ayarı sayacın içinde</span><span class="now">Dark Mode uygulama Ayarları'nda</span></li>
+          <li><span class="mk">5</span><span class="was">Oturum bitince ne olduğu belirsiz</span><span class="now">"Bitir": süre Çalışmalarım'a işlenir, sıradaki konu önerilir</span></li>
+        </ol>
+      </div>
+      <div class="ch-visual">
+        <div class="phone compare zoomable" data-full="assets/sonra/study-session.png" data-cap="Çalışma Oturumu · yeni akış (wireframe)">
+          <div class="screen">
+            <img src="assets/once/sayac-ayar.jpg" alt="Bugünkü sayaç ayarları">
+            <div class="after"><img src="assets/sonra/study-session.png" alt="Yeni Çalışma Oturumu wireframe"></div>
+          </div>
+          <span class="divider"></span>
+          <span class="lbl lbl-old">ÖNCE</span><span class="lbl lbl-new">SONRA</span>
+        </div>
+        <p class="ch-caption"><b>Önce:</b> her seferinde açılan sayaç ayarı · <b>Sonra:</b> tek ekranda oturum</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- KADEME -->
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kademe farkları</span>
+        <h2>Bir uygulama, üç yaş grubu.</h2>
+        <p class="lead">Bugün ilkokul, ortaokul ve lise öğrencisi aynı Ana Sayfa'yı görüyor. Yenisinde bileşenler aynı kalıyor; yalnız karakter boyutu, kart sırası ve sayaç sınıf seviyesine göre ayarlanıyor. Sınav türü de sınıftan otomatik geliyor.</p>
+      </div>
+      <div class="levels">
+        <div class="level reveal">
+          <div class="phone zoomable" data-full="assets/sonra/home-ilkokul.png" data-cap="Ana Sayfa · ilkokul"><div class="screen"><img src="assets/sonra/home-ilkokul.png" alt="İlkokul Ana Sayfa wireframe" loading="lazy"></div></div>
+          <span class="chip">1–4. sınıf</span>
+          <h3>İlkokul</h3>
+          <p>Sınav sayacı yok. Üst barda Mesajlar yerine Rozetlerim; sade ve oyunlaştırılmış bir başlangıç.</p>
+        </div>
+        <div class="level reveal d1">
+          <div class="phone zoomable" data-full="assets/sonra/home-ortaokul.png" data-cap="Ana Sayfa · ortaokul"><div class="screen"><img src="assets/sonra/home-ortaokul.png" alt="Ortaokul Ana Sayfa wireframe" loading="lazy"></div></div>
+          <span class="chip">5–8. sınıf</span>
+          <h3>Ortaokul</h3>
+          <p>LGS sayacı yalnız 8. sınıfta görünür; 5–7. sınıfta gereksiz bir geri sayım yok.</p>
+        </div>
+        <div class="level reveal d2">
+          <div class="phone zoomable" data-full="assets/sonra/home-lise.png" data-cap="Ana Sayfa · lise"><div class="screen"><img src="assets/sonra/home-lise.png" alt="Lise Ana Sayfa wireframe" loading="lazy"></div></div>
+          <span class="chip">9–12. sınıf ve mezun</span>
+          <h3>Lise</h3>
+          <p>YKS sayacı ve "Hedefimi Göster" öne çıkar; hedefe ve denemelere odaklı bir ana sayfa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAHA AZ ADIM -->
+  <section class="block" id="adimlar" style="padding-top:40px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Daha az adım</span>
+        <h2>En sık yapılan işler, daha kısa yoldan.</h2>
+        <p class="lead">Öğrencinin her gün tekrarladığı işler adım adım. Kırmızı adımlar bugün öğrenciyi durduran yerler.</p>
+      </div>
+      <div class="flows">
+        <div class="flow reveal">
+          <div class="flow-head"><h3>Ödeve ulaşmak</h3><span class="flow-count"><span class="o">4 adım</span><span class="arr">→</span><span class="n">1 dokunuş</span></span></div>
+          <div class="flow-row o"><span class="k">Bugün</span><span class="step">Başka bir sayfa</span><span class="arr">›</span><span class="step">Giriş'e dön</span><span class="arr">›</span><span class="step bad">Hızlı Erişim'de Ödevler'i bul (kaldırıldıysa yok)</span><span class="arr">›</span><span class="step">Ödevler</span></div>
+          <div class="flow-row n"><span class="k">Yeni</span><span class="step">Alt menü › Ödevler (her ekrandan)</span></div>
+        </div>
+        <div class="flow reveal d1">
+          <div class="flow-head"><h3>Çalışmaya başlamak</h3><span class="flow-count"><span class="o">5 adım</span><span class="arr">→</span><span class="n">2 adım</span></span></div>
+          <div class="flow-row o"><span class="k">Bugün</span><span class="step">▶</span><span class="arr">›</span><span class="step bad">Sayaç ayarları</span><span class="arr">›</span><span class="step">Başlat</span><span class="arr">›</span><span class="step">Video İzle</span><span class="arr">›</span><span class="step bad">"Sayaçtan ayrılmak istiyor musunuz?"</span></div>
+          <div class="flow-row n"><span class="k">Yeni</span><span class="step">▶ Oturum başlar</span><span class="arr">›</span><span class="step">Video İzle (sayaç üstte sürer)</span></div>
+        </div>
+        <div class="flow reveal">
+          <div class="flow-head"><h3>Randevu almak</h3><span class="flow-count"><span class="o">Hata penceresi</span><span class="arr">→</span><span class="n">Gerek yok</span></span></div>
+          <div class="flow-row o"><span class="k">Bugün</span><span class="step">Koç</span><span class="arr">›</span><span class="step">Gün</span><span class="arr">›</span><span class="step bad">Geçmiş saat de seçilebilir</span><span class="arr">›</span><span class="step">Devam Et</span><span class="arr">›</span><span class="step bad">"Hata" penceresi</span></div>
+          <div class="flow-row n"><span class="k">Yeni</span><span class="step">Koç</span><span class="arr">›</span><span class="step">Gün ve uygun saat</span><span class="arr">›</span><span class="step">Devam Et · 9 Eki 14:50</span><span class="arr">›</span><span class="step">Randevularıma git</span></div>
+        </div>
+        <div class="flow reveal d1">
+          <div class="flow-head"><h3>Bildirimleri görmek</h3><span class="flow-count"><span class="o">Profilim'de saklı</span><span class="arr">→</span><span class="n">Her sayfada</span></span></div>
+          <div class="flow-row o"><span class="k">Bugün</span><span class="step">Profilim sekmesi</span><span class="arr">›</span><span class="step bad">Listenin içinde "Bildirimler (85)"</span></div>
+          <div class="flow-row n"><span class="k">Yeni</span><span class="step">Üst bardaki zil · okunmamış sayısıyla</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KORUNANLAR -->
+  <section style="padding: 0 0 130px">
+    <div class="wrap">
+      <div class="keep reveal">
+        <div>
+          <span class="eyebrow" style="color:var(--lime)">Neler aynı kalıyor?</span>
+          <h2>Değişen içerik değil, ona ulaşma biçimi.</h2>
+          <p class="lead">Öğrencilerin ve öğretmenlerin alıştığı içerik ve özellikler yerinde duruyor. Yeni tasarım onları daha kolay bulunur hâle getiriyor.</p>
+        </div>
+        <ul>
+          <li>Limy karakterleri, modlar ve XP</li>
+          <li>Rozetler ve Liderlik Tablosu</li>
+          <li>Video eğitimler, testler ve denemeler</li>
+          <li>Limy AI, Wave &amp; Podcast</li>
+          <li>Kurumun atadığı koçlar ve randevular</li>
+          <li>Ödevler, çalışma programı ve notlar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EKRAN HARİTASI -->
+  <section class="block" id="harita" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ekran haritası</span>
+        <h2>Yeni Limy Student'ın tamamı.</h2>
+        <p class="lead">Tüm sayfalar ve adımlar: uygulama açılışından her sekmenin en alt ekranına kadar. Bir sekme seçin, ekranlara dokunarak büyütün.</p>
+      </div>
+
+      <div class="map-entry reveal">
+        <h3>Açılış ve giriş</h3>
+        <p>Hesabı kurum açar; öğrenci telefonu ve SMS koduyla girer. Günün ilk açılışında modunu seçer ve Ana Sayfa'ya ulaşır.</p>
+        <div class="entry-flow">
+          <figure><div class="mini zoomable" data-full="assets/harita/splash.png" data-cap="Açılış"><img src="assets/harita/splash.png" alt="" loading="lazy"></div><figcaption>Açılış</figcaption></figure>
+          <span class="arr">→</span>
+          <figure><div class="mini zoomable" data-full="assets/harita/login.png" data-cap="Giriş Yap (telefon)"><img src="assets/harita/login.png" alt="" loading="lazy"></div><figcaption>Giriş Yap (telefon)</figcaption></figure>
+          <span class="arr">→</span>
+          <figure><div class="mini zoomable" data-full="assets/harita/otp.png" data-cap="SMS kodu"><img src="assets/harita/otp.png" alt="" loading="lazy"></div><figcaption>SMS kodu</figcaption></figure>
+          <span class="arr">→</span>
+          <figure><div class="mini zoomable" data-full="assets/sonra/mode-select.png" data-cap="Günün modu"><img src="assets/sonra/mode-select.png" alt="" loading="lazy"></div><figcaption>Günün modu (ilk açılışta)</figcaption></figure>
+          <span class="arr">→</span>
+          <figure><div class="mini zoomable" data-full="assets/sonra/home.png" data-cap="Ana Sayfa"><img src="assets/sonra/home.png" alt="" loading="lazy"></div><figcaption>Ana Sayfa</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="map-shell reveal">
+        <div class="tabbar" role="tablist">
+          <button role="tab" aria-selected="true" data-tab="ana"><span class="ti"></span>Ana Sayfa</button>
+          <button role="tab" aria-selected="false" data-tab="odev"><span class="ti"></span>Ödevler</button>
+          <button role="tab" aria-selected="false" data-tab="app" class="center"><span class="ti"></span>Uygulamalar</button>
+          <button role="tab" aria-selected="false" data-tab="takvim"><span class="ti"></span>Takvim</button>
+          <button role="tab" aria-selected="false" data-tab="koc"><span class="ti"></span>Koçum</button>
+          <button role="tab" aria-selected="false" data-tab="ust" class="top"><span class="ti"></span>Üst bar · Profil</button>
+        </div>
+
+        <div class="panel active" id="p-ana">
+          <div class="panel-head"><div><h3>Ana Sayfa</h3><p>Kaydırılabilir öğrenci ve koç kartları, sınava kalan süre, sabit Hızlı Erişim ve kart kart günün özeti.</p></div><span class="count">11 ekran ve durum</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/home.png" data-cap="Ana Sayfa"><img src="assets/sonra/home.png" alt="" loading="lazy"></div><figcaption>Ana Sayfa</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/home-scrolled.png" data-cap="Kaydırınca dar bar"><img src="assets/sonra/home-scrolled.png" alt="" loading="lazy"></div><figcaption>Kaydırınca dar bar</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/home-full.png" data-cap="Sayfanın tamamı"><img src="assets/sonra/home-full.png" alt="" loading="lazy"></div><figcaption>Sayfanın tamamı</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/goal-sheet.png" data-cap="Hedefimi Göster"><img src="assets/sonra/goal-sheet.png" alt="" loading="lazy"></div><figcaption>Hedefimi Göster</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/home-ilkokul.png" data-cap="Ana Sayfa · ilkokul"><img src="assets/sonra/home-ilkokul.png" alt="" loading="lazy"></div><figcaption>İlkokul</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/home-ortaokul.png" data-cap="Ana Sayfa · ortaokul"><img src="assets/sonra/home-ortaokul.png" alt="" loading="lazy"></div><figcaption>Ortaokul</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/home-lise.png" data-cap="Ana Sayfa · lise"><img src="assets/sonra/home-lise.png" alt="" loading="lazy"></div><figcaption>Lise</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Ana Sayfa</span><span>Kaydırınca dar bar</span><span>Sayfanın tamamı</span><span>Koç slaytı</span><span>Hedefimi Göster</span><span>Kademe: ilkokul</span><span>Kademe: ortaokul</span><span>Kademe: lise</span><span class="sub">Hızlı Erişim › Soru Sor · Videolar · Testler · Limy AI</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="p-odev">
+          <div class="panel-head"><div><h3>Ödevler</h3><p>Ortak takvim şeridi, son teslim günlerinde nokta, Bekleyen / Tamamlandı filtresi ve ödev detayı.</p></div><span class="count">4 ekran ve adım</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/assignments.png" data-cap="Ödevlerim"><img src="assets/sonra/assignments.png" alt="" loading="lazy"></div><figcaption>Ödevlerim</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/assignment-detail.png" data-cap="Ödev detayı"><img src="assets/harita/assignment-detail.png" alt="" loading="lazy"></div><figcaption>Ödev detayı › Ödevi Tamamla</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/study-test.png" data-cap="Test ödevi › Test"><img src="assets/harita/study-test.png" alt="" loading="lazy"></div><figcaption>Test ödevi › Test</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/study-video.png" data-cap="Video ödevi › Video"><img src="assets/sonra/study-video.png" alt="" loading="lazy"></div><figcaption>Video ödevi › Video</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Ödevlerim (alt menü)</span><span>Ay görünümü</span><span>Bekleyen / Tamamlandı / Tümü</span><span>Geleneksel ödev › detay › Ödevi Tamamla</span><span>Test ödevi › Test</span><span>Video ödevi › Video</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="p-app">
+          <div class="panel-head"><div><h3>Uygulamalar</h3><p>Çalışma Programım ve oturum akışı, sorular, videolar, testler, istatistikler, Limy AI, podcast ve ek uygulamalar.</p></div><span class="count">35+ ekran ve adım</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/apps.png" data-cap="Uygulamalar"><img src="assets/sonra/apps.png" alt="" loading="lazy"></div><figcaption>Uygulamalar</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/study-plan.png" data-cap="Çalışma Programım"><img src="assets/sonra/study-plan.png" alt="" loading="lazy"></div><figcaption>Çalışma Programım</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/study-add.png" data-cap="+ Yeni Çalışma Ekle"><img src="assets/harita/study-add.png" alt="" loading="lazy"></div><figcaption>+ Yeni Çalışma Ekle</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/study-session.png" data-cap="▶ Çalışma Oturumu"><img src="assets/sonra/study-session.png" alt="" loading="lazy"></div><figcaption>▶ Çalışma Oturumu</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/study-video.png" data-cap="Oturumda video"><img src="assets/sonra/study-video.png" alt="" loading="lazy"></div><figcaption>Oturumda video</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/study-finished.png" data-cap="Bitir"><img src="assets/sonra/study-finished.png" alt="" loading="lazy"></div><figcaption>Bitir</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/ask-teacher.png" data-cap="Öğretmenlerine Sor"><img src="assets/harita/ask-teacher.png" alt="" loading="lazy"></div><figcaption>Öğretmenlerine Sor</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/question-detail.png" data-cap="Soru ve yanıt"><img src="assets/harita/question-detail.png" alt="" loading="lazy"></div><figcaption>Soru ve yanıt</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/videos.png" data-cap="Video Eğitimler"><img src="assets/harita/videos.png" alt="" loading="lazy"></div><figcaption>Video Eğitimler</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/tests.png" data-cap="Testler &amp; Denemeler"><img src="assets/harita/tests.png" alt="" loading="lazy"></div><figcaption>Testler &amp; Denemeler</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/stats.png" data-cap="İstatistikler"><img src="assets/harita/stats.png" alt="" loading="lazy"></div><figcaption>İstatistikler</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/ai-chat.png" data-cap="Limy AI"><img src="assets/harita/ai-chat.png" alt="" loading="lazy"></div><figcaption>Limy AI</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/podcast.png" data-cap="Wave &amp; Podcast"><img src="assets/harita/podcast.png" alt="" loading="lazy"></div><figcaption>Wave &amp; Podcast</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Uygulamalar</span><span>Çalışma Programım (dolu / boş)</span><span>+ Yeni Çalışma Ekle</span><span>Başarılı</span><span>▶ Çalışma Oturumu</span><span>⚙ Ayarlar</span><span>Video</span><span>Test</span><span>Bitir</span>
+            <span>Öğretmenlerine Sor (dolu / boş)</span><span>Soru Sor 1/2</span><span>Soru Sor 2/2</span><span>Soru ve yanıt</span>
+            <span>Video Eğitimler</span><span>Sınıf seç</span><span>Kategori</span>
+            <span>Testler &amp; Denemeler</span><span>Yaprak Testler</span><span>Denemeler (boş / dolu)</span>
+            <span>İstatistikler</span><span>Ders seç</span><span>Ders / konu süzülmüş</span>
+            <span>Limy AI</span><span>Wave &amp; Podcast</span><span>Seri</span><span>Oynatıcı</span><span>Kaydırınca yapışkan filtre</span><span>Canlı</span>
+            <span>LIMY Insight</span><span>Enneagram</span><span class="sub">Kitapix · Polylingo · EduKidGames (yalnız kurum açtıysa)</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="p-takvim">
+          <div class="panel-head"><div><h3>Takvim</h3><p>Günlük ajanda: seçili günün tüm işleri saat sırasıyla, renkli tür etiketiyle. Her satır kendi sayfasına gider.</p></div><span class="count">6 ekran ve durum</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/calendar.png" data-cap="Günlük ajanda"><img src="assets/sonra/calendar.png" alt="" loading="lazy"></div><figcaption>Günlük ajanda</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/calendar-month.png" data-cap="Ay görünümü"><img src="assets/harita/calendar-month.png" alt="" loading="lazy"></div><figcaption>Ay görünümü</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/add-note.png" data-cap="+ Not Ekle"><img src="assets/harita/add-note.png" alt="" loading="lazy"></div><figcaption>+ Not Ekle</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Günlük ajanda</span><span>Ay görünümü</span><span>Filtre: Randevu</span><span>Filtre · boş gün</span><span>+ Not Ekle</span><span>Not satırı › düzenle</span><span class="sub">Bugünün menüsü (kurum girdiyse)</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="p-koc">
+          <div class="panel-head"><div><h3>Koçum</h3><p>Koçlar, randevular ve mesajlar tek yerde. Randevu akışı koç seçiminden değerlendirmeye kadar.</p></div><span class="count">9 ekran ve adım</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/coach.png" data-cap="Koçum"><img src="assets/sonra/coach.png" alt="" loading="lazy"></div><figcaption>Koçum</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/appointment-coaches.png" data-cap="Randevu Al › koç"><img src="assets/harita/appointment-coaches.png" alt="" loading="lazy"></div><figcaption>Randevu Al › koç</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/appointment.png" data-cap="Gün / saat"><img src="assets/sonra/appointment.png" alt="" loading="lazy"></div><figcaption>Gün / saat</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/sonra/appointment-success.png" data-cap="Başarılı"><img src="assets/sonra/appointment-success.png" alt="" loading="lazy"></div><figcaption>Başarılı</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/appointment-detail.png" data-cap="Randevu detayı"><img src="assets/harita/appointment-detail.png" alt="" loading="lazy"></div><figcaption>Randevu detayı</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/chat.png" data-cap="Mesajlar"><img src="assets/harita/chat.png" alt="" loading="lazy"></div><figcaption>Mesajlar</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Koçum</span><span>Mesajlar</span><span>Geçmiş randevular</span><span>Randevu Al › koç</span><span>Gün / saat</span><span>Başarılı</span><span>Randevu detayı</span><span>Görüşme</span><span>Değerlendir</span>
+          </div></div>
+        </div>
+
+        <div class="panel" id="p-ust">
+          <div class="panel-head"><div><h3>Üst bar · Profil</h3><p>Her ana sayfanın üstünde Profil, Mesajlar ve Bildirimler. Profil üç grupta: Ben · Hedefim · Hesap.</p></div><span class="count">14 ekran ve durum</span></div>
+          <div class="strip">
+            <figure><div class="mini zoomable" data-full="assets/sonra/profile.png" data-cap="Profil"><img src="assets/sonra/profile.png" alt="" loading="lazy"></div><figcaption>Profil</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/notifications.png" data-cap="Bildirimler"><img src="assets/harita/notifications.png" alt="" loading="lazy"></div><figcaption>Bildirimler</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/messages.png" data-cap="Mesajlar"><img src="assets/harita/messages.png" alt="" loading="lazy"></div><figcaption>Mesajlar</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/modes.png" data-cap="Ben › Modlarım"><img src="assets/harita/modes.png" alt="" loading="lazy"></div><figcaption>Ben › Modlarım</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/badges.png" data-cap="Ben › Rozetlerim"><img src="assets/harita/badges.png" alt="" loading="lazy"></div><figcaption>Ben › Rozetlerim</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/leaderboard.png" data-cap="Ben › Liderlik"><img src="assets/harita/leaderboard.png" alt="" loading="lazy"></div><figcaption>Ben › Liderlik</figcaption></figure>
+            <figure><div class="mini zoomable" data-full="assets/harita/goals.png" data-cap="Hedefim › Hedeflerim"><img src="assets/harita/goals.png" alt="" loading="lazy"></div><figcaption>Hedefim › Hedeflerim</figcaption></figure>
+          </div>
+          <div class="all-pages"><h4>Tüm sayfalar ve adımlar</h4><div class="chips">
+            <span>Mesajlar</span><span>Sohbet</span><span>Bildirimler</span><span>Profil</span><span>Profil düzenle</span><span>Ben › Modlarım</span><span>Mod bilgisi</span><span>Ben › Rozetlerim</span><span>Ben › Liderlik</span><span>Liderlik filtresi</span><span>Hedefim › Hedeflerim</span><span>Hesap › Bildirimler</span><span>Hesap › Ayarlar</span><span>Giriş OTP Kodum</span>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOL HARİTASI -->
+  <section class="block" id="yol" style="padding-top:20px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Yol haritası</span>
+        <h2>Şu an neredeyiz?</h2>
+        <p class="lead">Gördüğünüz çalışma, yeni Limy Student'ın temelidir. Görsel tasarım ve geliştirme ile birlikte tamamı önümüzdeki dönemde bitmiş olacak.</p>
+      </div>
+      <div class="roadmap reveal">
+        <div class="rm done"><span class="dot">✓</span><span class="st">Tamamlandı</span><h3>Mevcut sistem analizi</h3><p>Yayındaki uygulamanın tüm ekranları tek tek incelendi.</p></div>
+        <div class="rm done"><span class="dot">✓</span><span class="st">Bu sayfa</span><h3>UX: akış ve wireframe</h3><p>Yeni gezinme, ekran haritası ve önce / sonra kararları.</p></div>
+        <div class="rm now"><span class="dot">3</span><span class="st">Sırada</span><h3>UI: görsel tasarım</h3><p>Limy renkleri, karakterler, ikonlar ve son ekranlar.</p></div>
+        <div class="rm"><span class="dot">4</span><span class="st">Ardından</span><h3>Geliştirme ve test</h3><p>Yeni ekranların uygulamaya aktarılması ve denenmesi.</p></div>
+        <div class="rm goal"><span class="dot">★</span><span class="st">Hedef</span><h3>Yeni dönemde yayında</h3><p>Öğrencileriniz yeni Limy Student ile başlar.</p></div>
+      </div>
+
+      <div class="disclaimer reveal">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff6b1f" stroke-width="2.2" stroke-linecap="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg>
+        <p><b>Bu bir UX çalışmasıdır.</b> "Sonra" ekranları bilgi yerleşimini ve akışı gösteren wireframe'lerdir; renkler, karakterler ve yazı tipleri temsilidir. Son görünüm UI aşamasında oluşturulacak ve yeni tasarım önümüzdeki dönemde tamamlanarak yayına alınacaktır. Bazı ayrıntılar (ör. Hızlı Erişim'deki kısayollar, alt menü sırası) kullanım verisine göre netleşecektir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KAPANIŞ -->
+  <section class="closing">
+    <div class="wrap reveal">
+      <span class="eyebrow">Özet</span>
+      <h2>Aynı Limy. <span>Daha az adım,</span> daha net ekranlar.</h2>
+      <p class="lead">Öğrenciniz ödevine tek dokunuşla ulaşır, çalışmasını tek ekranda yürütür, koçuna tek yerden ulaşır. Yeni dönemde, yeni Limy Student ile.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-primary" href="#once-sonra">Önce / sonra'yı tekrar izle</a>
+        <a class="btn btn-ghost" href="#harita">Ekran haritası</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Limy Student · Öğrenci uygulaması UX çalışması</span>
+    <span>Önce görselleri: yayındaki uygulama · Sonra görselleri: wireframe</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Ekran önizleme">
+  <img src="" alt="">
+  <p></p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
